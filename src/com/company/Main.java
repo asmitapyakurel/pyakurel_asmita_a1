@@ -8,23 +8,24 @@ public class Main {
         String colour;
         Scanner input = new Scanner(System.in);
         System.out.println("Enter name:");
-        name = input.next();
+        name = input.nextLine();
         if(add_name(name))
             System.out.println("Okay");
         else
         {
             System.out.println("Name is already taken");
             System.out.println("Enter name:");
+            name = input.nextLine();
         }
         System.out.println("Enter cycle colour:");
-        colour = input.next();
+        colour = input.nextLine();
         if(add_colour(colour))
             System.out.println("Okay");
         else
         {
             System.out.println("cycle colour is already taken");
             System.out.println("Enter cycle colour:");
-            colour = input.next();
+            colour = input.nextLine();
         }
     }
 
