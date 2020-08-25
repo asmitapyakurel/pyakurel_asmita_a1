@@ -8,9 +8,9 @@ public class grid<jet, jetString> {
 
     int SIZE = 1000;
 
-    jetString = JOptionPane.showInputDialog("Do you want to on or off your cycle?",
-    JOptionPane.INFORMATION_MESSAGE)
-    jet  = Double.parseBoolean(jetString);
+//    jetString = JOptionPane.showInputDialog("Do you want to on or off your cycle?",
+//    JOptionPane.INFORMATION_MESSAGE)
+//    jet  = Double.parseBoolean(jetString);
 
 
 }
