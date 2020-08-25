@@ -5,6 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         String name;
+        String colour;
         Scanner input = new Scanner(System.in);
         System.out.println("Enter name:");
         name = input.next();
@@ -16,7 +17,16 @@ public class Main {
             System.out.println("Enter name:");
             name = input.next();
         }
-
+        System.out.println("Enter cycle colour:");
+        colour = input.next();
+        if(display_colour(colour))
+            System.out.println("Okay");
+        else
+        {
+            System.out.println("cycle colour is already taken");
+            System.out.println("Enter cycle colour:");
+            colour = input.next();
+        }
     }
 
 
@@ -37,7 +47,17 @@ public class Main {
 
 
         }
+    public static boolean display_colour(String colour) {
+        boolean result;
+        String cycle_colour = new String();
 
+        if (colour.equals(cycle_colour))
+            result = true;
+        else {
+            result = false;
+        }
+        return result;
+    }
 
     }
 
