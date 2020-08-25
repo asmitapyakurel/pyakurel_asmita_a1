@@ -9,17 +9,16 @@ public class Main {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter name:");
         name = input.next();
-        if(display_name(name))
+        if(add_name(name))
             System.out.println("Okay");
         else
         {
             System.out.println("Name is already taken");
             System.out.println("Enter name:");
-            name = input.next();
         }
         System.out.println("Enter cycle colour:");
         colour = input.next();
-        if(display_colour(colour))
+        if(add_colour(colour))
             System.out.println("Okay");
         else
         {
@@ -30,7 +29,7 @@ public class Main {
     }
 
 
-	public static boolean display_name(String name)
+	public static boolean add_name(String name)
         {
             boolean result;
             String user_name = new String();
@@ -47,7 +46,7 @@ public class Main {
 
 
         }
-    public static boolean display_colour(String colour) {
+    public static boolean add_colour(String colour) {
         boolean result;
         String cycle_colour = new String();
 
