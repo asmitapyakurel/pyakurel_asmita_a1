@@ -20,9 +20,9 @@ public class Main implements Runnable{
         //Dimension dMAX = frame.getMaximumSize();
         frame.setPreferredSize(new Dimension(800, 850));
 
-        ////////////////
+
         // MAIN PANEL //
-        ////////////////
+
         //main_bg = ImageIO.read("main_bg.img") // Add image for background
         final JPanel mainMenu = new JPanel();
         mainMenu.setLayout(new BorderLayout());
@@ -67,9 +67,8 @@ public class Main implements Runnable{
         frame.add(mainMenu);
 
 
-        ////////////////
         // PLAY PANEL //
-        ////////////////
+
         final JPanel playMenu = new JPanel();
         playMenu.setLayout(new BorderLayout());
         playMenu.setBackground(Color.BLACK);
@@ -88,9 +87,9 @@ public class Main implements Runnable{
         playMenu.add(playButtons, BorderLayout.CENTER);
 
 
-        //////////////////
+
         // ONLINE PANEL //
-        //////////////////
+
         final JPanel onlineMenu = new JPanel();
         onlineMenu.setLayout(new BorderLayout());
         onlineMenu.setBackground(Color.BLACK);
@@ -109,17 +108,17 @@ public class Main implements Runnable{
 
         onlineMenu.add(onlineButtons, BorderLayout.CENTER);
 
-        ////////////////////////
+
         // INSTRUCTIONS PANEL //
-        ////////////////////////
+
         final JPanel instructionMenu = new JPanel();
         instructionMenu.setLayout(new BorderLayout());
         instructionMenu.setBackground(Color.BLACK);
         // Display image as instructions page. with rules etc.
 
-        ///////////////
+
         // JOIN MENU //
-        ///////////////
+
         final JPanel testLevelMenu = new JPanel();
         testLevelMenu.setLayout(new GridLayout(1,3));
         testLevelMenu.setBackground(Color.BLACK);
@@ -137,9 +136,9 @@ public class Main implements Runnable{
         final JButton multiexitButton = new JButton("EXIT");
         testLevelMenu.add(multiexitButton);
 
-        ///////////////////////
+
         // THREE PLAYER MENU //
-        ///////////////////////
+
         final JPanel threeMenu = new JPanel();
         threeMenu.setLayout(new GridLayout(1,3));
         threeMenu.setBackground(Color.BLACK);
@@ -158,9 +157,9 @@ public class Main implements Runnable{
         threeMenu.add(threeexitButton);
 
 
-        /////////////////////
+
         // Action Listeners//
-        /////////////////////
+
 
         // Play Button Action
         playButton.addActionListener(new ActionListener() {
